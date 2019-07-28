@@ -1,23 +1,36 @@
 import pandas as pd
 import numpy as np
 from PIL import Image
+import os
 
 
 class GenerateDataset:
     def __init__(self, df):
         self.df = df
+        self.__parent_dir_list = ['train', 'test']
+        self.__child_dir_list = ['angry', 'disgust', 'fear', 'happy', 'neutral', 'sad', 'surprise']
 
     def csv_2img(self):
 
+        if not os.path.exists('dataset'):
+            os.makedirs('dataset')
+
+        for par_dir in self.__parent_dir_list:
+            if not os.path.exists('image/' + par_dir):
+                os.makedirs('image/' + par_dir)
+            for child_dir in self.__child_dir_list:
+                if not os.path.exists('image/' + par_dir + '/' + child_dir):
+                    os.makedirs('image/' + par_dir + '/' + child_dir)
+
         # 0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral
         data_loc = {
-            0: 'images/train/angry/',
-            1: 'images/train/disgust/',
-            2: 'images/train/fear/',
-            3: 'images/train/happy/',
-            4: 'images/train/sad/',
-            5: 'images/train/surprise/',
-            6: 'images/train/neutral/'
+            0: 'dataset/train/angry/',
+            1: 'dataset/train/disgust/',
+            2: 'dataset/train/fear/',
+            3: 'dataset/train/happy/',
+            4: 'dataset/train/sad/',
+            5: 'dataset/train/surprise/',
+            6: 'dataset/train/neutral/'
         }
 
         for index, row in self.df.iterrows():
