@@ -3,6 +3,8 @@
     <words>
       <w>crossentropy</w>
       <w>datset</w>
+      <w>frontalface</w>
+      <w>haarcascade</w>
       <w>relu</w>
       <w>softmax</w>
     </words>

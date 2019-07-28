@@ -8,11 +8,13 @@ class PrepareData:
         self.data_generator_test = ImageDataGenerator()
 
         # number of images to feed in the CNN
-        self.batch_size = 128
+        self.batch_size = 32
+
         # image size 48*48 pixels
         self.img_size = 48
+
         # input path for the images
-        self.path = "images/"
+        self.path = "dataset/"
 
     def run(self):
         train_generator = self.data_generator_train.flow_from_directory(self.path + "train",

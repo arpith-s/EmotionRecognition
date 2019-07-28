@@ -14,6 +14,7 @@ class GenerateDataset:
         self.__child_dir_list = ['angry', 'disgust', 'fear', 'happy', 'neutral', 'sad', 'surprise']
 
     def csv_2img(self):
+        print('Extracting data...')
         try:
             # Open JSON file
             with open('config.json') as config_file:
