@@ -6,3 +6,4 @@ crayons
 opencv-python
 PIL
 shutil
+requests
