@@ -51,8 +51,8 @@ class EmotionRecognition:
                 image = cv2.resize(crop_frame, (48, 48))
                 pred = self.predict_emotion(image[np.newaxis, :, :, np.newaxis], m)
 
-                cv2.putText(frame, pred, (x, y), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2)
-                cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 255), 2)
+                cv2.putText(frame, pred, (x, y), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+                cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 2)
 
                 cv2.imshow("Live Stream", frame)
 

@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41a59081-210a-4427-9959-2a01f4d2b808" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Arpith.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Arpith.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/convolutional_neural_network.py" beforeDir="false" afterPath="$PROJECT_DIR$/convolutional_neural_network.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generate_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/generate_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ezgif.com-video-to-gif.gif" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,7 +60,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.text2">
+  <component name="RunManager" selected="Python.main">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="EmotionRecognition" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -91,6 +87,9 @@
       <module name="EmotionRecognition" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Kivy" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -129,6 +128,9 @@
       <module name="EmotionRecognition" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -148,6 +150,9 @@
       <module name="EmotionRecognition" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Kivy" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -165,8 +170,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.text2" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.text2" />
         <item itemvalue="Python.kivyFloatLayout" />
         <item itemvalue="Python.test" />
       </list>
@@ -191,6 +196,7 @@
       <workItem from="1565328065240" duration="54000" />
       <workItem from="1565330362631" duration="6364000" />
       <workItem from="1565371901731" duration="24887000" />
+      <workItem from="1565465209644" duration="2612000" />
     </task>
     <servers />
   </component>
