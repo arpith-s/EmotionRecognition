@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="41a59081-210a-4427-9959-2a01f4d2b808" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ezgif.com-video-to-gif.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -196,7 +194,7 @@
       <workItem from="1565328065240" duration="54000" />
       <workItem from="1565330362631" duration="6364000" />
       <workItem from="1565371901731" duration="24887000" />
-      <workItem from="1565465209644" duration="2612000" />
+      <workItem from="1565465209644" duration="3538000" />
     </task>
     <servers />
   </component>
