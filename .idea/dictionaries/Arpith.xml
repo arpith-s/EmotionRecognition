@@ -3,10 +3,15 @@
     <words>
       <w>crossentropy</w>
       <w>datset</w>
+      <w>dirnames</w>
+      <w>dirpath</w>
       <w>frontalface</w>
       <w>haarcascade</w>
+      <w>logoin</w>
+      <w>maxbytes</w>
       <w>relu</w>
       <w>softmax</w>
+      <w>vaild</w>
     </words>
   </dictionary>
 </component>

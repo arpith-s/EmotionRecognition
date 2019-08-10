@@ -1,4 +1,5 @@
 from keras.preprocessing.image import ImageDataGenerator
+import crayons as cr
 
 
 class PrepareData:
@@ -17,18 +18,23 @@ class PrepareData:
         self.path = "dataset/"
 
     def run(self):
-        train_generator = self.data_generator_train.flow_from_directory(self.path + "train",
-                                                                        target_size=(self.img_size, self.img_size),
-                                                                        color_mode="grayscale",
-                                                                        batch_size=self.batch_size,
-                                                                        class_mode='categorical',
-                                                                        shuffle=True)
+        try:
+            train_generator = self.data_generator_train.flow_from_directory(self.path + "train",
+                                                                            target_size=(self.img_size, self.img_size),
+                                                                            color_mode="grayscale",
+                                                                            batch_size=self.batch_size,
+                                                                            class_mode='categorical',
+                                                                            shuffle=True)
 
-        test_generator = self.data_generator_test.flow_from_directory(self.path + "test",
-                                                                      target_size=(self.img_size, self.img_size),
-                                                                      color_mode="grayscale",
-                                                                      batch_size=self.batch_size,
-                                                                      class_mode='categorical',
-                                                                      shuffle=False)
+            test_generator = self.data_generator_test.flow_from_directory(self.path + "test",
+                                                                          target_size=(self.img_size, self.img_size),
+                                                                          color_mode="grayscale",
+                                                                          batch_size=self.batch_size,
+                                                                          class_mode='categorical',
+                                                                          shuffle=False)
 
-        return train_generator, test_generator
+            return train_generator, test_generator
+        except Exception as e:
+            print()
+            print(cr.red(str(e), bold=True))
+            exit(1)

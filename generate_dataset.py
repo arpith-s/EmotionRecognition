@@ -1,7 +1,7 @@
 from PIL import Image
 import numpy as np
-import crayons
-import json
+import crayons as cr
+import shutil
 import os
 
 
@@ -14,15 +14,21 @@ class GenerateDataset:
         self.__child_dir_list = ['angry', 'disgust', 'fear', 'happy', 'neutral', 'sad', 'surprise']
 
     def csv_2img(self):
-        print('Extracting data...')
-        try:
-            # Open JSON file
-            with open('config.json') as config_file:
-                config = json.load(config_file)
-            if config['Datset_status'] != 0:
-                print('Data Already Exists!')
-                exit(0)
+        print()
+        if os.path.exists('dataset'):
+            if self.get_size() > 6000000:
+                print(cr.blue('Dataset already present!\nRegenerate data? (Y/N) :', bold=True), end='')
+                a = input().strip().lower()
+                if a == 'n':
+                    return
+                elif a == 'y':
+                    shutil.rmtree('dataset/')
+                else:
+                    print(cr.red("Invalid Input", bold=True))
+                    exit(1)
 
+        print(cr.blue('Extracting data...', bold=True))
+        try:
             # Create required directories if they don't exist.
             if not os.path.exists('dataset'):
                 os.makedirs('dataset')
@@ -64,8 +70,19 @@ class GenerateDataset:
 
                 # Save Image
                 img.save(path + str(index) + '.png')
-            config['Datset_status'] = 1
-            print('Data Extraction Finished!')
+            print(cr.blue('Data Extraction Finished!', bold=True))
         except Exception as e:
-            print(str(e))
+            print()
+            print(cr.red(str(e), bold=True))
             exit(1)
+
+    @staticmethod
+    def get_size(start_path=r'dataset/'):
+        total_size = 0
+        for dirpath, dirnames, filenames in os.walk(start_path):
+            for f in filenames:
+                fp = os.path.join(dirpath, f)
+                # skip if it is symbolic link
+                if not os.path.islink(fp):
+                    total_size += os.path.getsize(fp)
+        return total_size

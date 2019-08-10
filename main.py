@@ -6,6 +6,7 @@ import data_generator as gen
 import pandas as pd
 import numpy as np
 import requests
+import crayons as cr
 import cv2
 import os
 
@@ -16,7 +17,7 @@ class EmotionRecognition:
         self.emotions_list = ["ANGRY", "DISGUSTED", "FEAR", "HAPPY",
                               "NEUTRAL", "SAD", "SURPRISED"]
         self.classifier = cv2.CascadeClassifier('models/haarcascade_frontalface_default.xml')
-        self.url = 'http://192.168.1.5:8080/shot.jpg'
+        self.url = 'http://192.168.1.3:8080/shot.jpg'
 
     @staticmethod
     def load():
@@ -84,33 +85,57 @@ class EmotionRecognition:
 
 
 if __name__ == '__main__':
-    df = pd.read_csv('emotionData.csv')
 
-    er = gd.GenerateDataset(df)
-    # er.csv_2img()
+    try:
+        df = pd.read_csv('emotionData.csv')
 
-    train_generator, test_generator = gen.PrepareData().run()
+        er = gd.GenerateDataset(df)
+        er.csv_2img()
 
-    model = convolutional_neural_network.CNN(train_generator, test_generator)
+        train_generator, test_generator = gen.PrepareData().run()
 
-    emotion_recognition = EmotionRecognition()
+        model = convolutional_neural_network.CNN(train_generator, test_generator)
 
-    if not os.path.exists('models'):
-        os.makedirs('models')
+        emotion_recognition = EmotionRecognition()
 
-    if os.path.isfile('models/CNN.h5'):
-        print('Model Already Exists! Do you want to retrain the model? (Y/N): ')
-        if input().lower().strip() == 'y':
-            os.remove('models/CNN.h5')
+        if not os.path.exists('models'):
+            os.makedirs('models')
+
+        if os.path.isfile('models/CNN.h5'):
+            print(cr.blue('Model Already Exists! Do you want to retrain the model? (Y/N): ', bold=True), end='')
+            y = input().lower().strip()
+            if y == 'y':
+                os.remove('models/CNN.h5')
+                history = model.create()
+                print(cr.blue('Do you want to plot the analysis graphs? (Y/N): ', bold=True), end='', )
+                x = input().lower().strip()
+                if x == 'y':
+                    emotion_recognition.plot_graph(history)
+                elif x == 'n':
+                    pass
+                else:
+                    print(cr.red("Invalid Input", bold=True))
+                    exit(1)
+            elif y == 'n':
+                pass
+            else:
+                print(cr.red("Invalid Input", bold=True))
+                exit(1)
+
+        else:
+            print(cr.blue('Training Model...', bold=True))
             history = model.create()
-            print('Do you want to plot the analysis graphs? (Y/N): ')
-            if input().lower().strip() == 'y':
+            print(cr.blue('Do you want to plot the analysis graphs? (Y/N): ', bold=True), end='0')
+            a = input().lower().strip()
+            if a == 'y':
                 emotion_recognition.plot_graph(history)
-    else:
-        print('Training Model...')
-        history = model.create()
-        print('Do you want to plot the analysis graphs? (Y/N): ')
-        if input().lower().strip() == 'y':
-            emotion_recognition.plot_graph(history)
-
-    emotion_recognition.stream_video(emotion_recognition.load())
+            elif a == 'n':
+                pass
+            else:
+                print(cr.red("Invalid Input", bold=True))
+                exit(1)
+        emotion_recognition.stream_video(emotion_recognition.load())
+    except Exception as e:
+        print()
+        print(cr.red(str(e), bold=True))
+        exit(1)
