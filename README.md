@@ -1,7 +1,7 @@
 # EmotionRecognition
 Emotion recognition (Angry, Disgust, Fear, Happy, Sad, Surprise, Neutral) using CNN with Python 3.x
 
-![](ezgif.com-video-to-gif.gif)
+![](https://github.com/Arpith-kumar/EmotionRecognition/blob/master/Image/ezgif.com-video-to-gif.gif)
 
 EmotionRecognition in action.
 
