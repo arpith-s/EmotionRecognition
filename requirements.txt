@@ -1,0 +1,8 @@
+keras
+matplotlib
+pandas
+numpy
+crayons
+opencv-python
+PIL
+shutil
