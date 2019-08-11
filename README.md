@@ -37,6 +37,7 @@ EmotionRecognition in action.
       * [IP Webcam](https://play.google.com/store/apps/details?id=com.pas.webcam&hl=en_IN) - Download IP Webcam
   
   5. Finally, run the main.py file to start execution.
+     
      Note: Make sure the emotionData.csv dataset file is in the project directory and also make sure the video is streaming before running main.py
       
       ```
