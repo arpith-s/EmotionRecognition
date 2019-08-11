@@ -1,4 +1,4 @@
-# EmotionRecognition [![Support](https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png)](https://www.buymeacoffee.com/arpit)
+# EmotionRecognition [![Support](https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png)](https://www.buymeacoffee.com/arpith)
 
 Emotion recognition (Angry, Disgust, Fear, Happy, Sad, Surprise, Neutral) using CNN with Python 3.x
 
