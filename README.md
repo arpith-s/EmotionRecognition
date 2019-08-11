@@ -1,4 +1,6 @@
-# EmotionRecognition [![Buy Me A Coffee](https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png)](https://www.buymeacoffee.com/lIjetvg)
+# EmotionRecognition 
+<a href="https://www.buymeacoffee.com/lIjetvg" target="_blank"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" >
+</a>
 
 Emotion recognition (Angry, Disgust, Fear, Happy, Sad, Surprise, Neutral) using CNN with Python 3.x
 
