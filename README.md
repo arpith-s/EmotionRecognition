@@ -38,7 +38,7 @@ EmotionRecognition in action.
   
   5. Finally, run the main.py file to start execution.
      
-     Note: Make sure the emotionData.csv dataset file is in the project directory and also make sure the video is streaming before running main.py
+     Note: Make sure the emotionData.csv dataset file is in the project directory and also make sure the video is streaming before running main.py [4]
       
       ```
       python main.py
