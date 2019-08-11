@@ -53,8 +53,6 @@ EmotionRecognition in action.
 
 ![alt text](https://github.com/Arpith-kumar/EmotionRecognition/blob/master/Image/5.png)
 
-![alt text](https://github.com/Arpith-kumar/EmotionRecognition/blob/master/Image/1.png)
-
 ## Built With:
 
 * [Keras](https://keras.io/) - The Python Deep Learning library.
