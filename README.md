@@ -1,4 +1,5 @@
-# EmotionRecognition <a href="https://www.buymeacoffee.com/lIjetvg" target="_blank"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+# EmotionRecognition [![Buy Me A Coffee](https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png)](https://www.buymeacoffee.com/lIjetvg)
+
 Emotion recognition (Angry, Disgust, Fear, Happy, Sad, Surprise, Neutral) using CNN with Python 3.x
 
 ![](https://github.com/Arpith-kumar/EmotionRecognition/blob/master/Image/ezgif.com-video-to-gif.gif)
