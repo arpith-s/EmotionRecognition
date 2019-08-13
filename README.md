@@ -1,4 +1,4 @@
-# EmotionRecognition  [![GitHub release](https://img.shields.io/badge/Release-v1-green.svg?&colorA=024a70&?&colorB=0779b5)](https://github.com/Arpith-kumar/EmotionRecognition)   [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg?logo=paypal&style=flat-square)](https://www.paypal.me/arpith09)&nbsp; [![Follow on Twitter](https://img.shields.io/twitter/follow/MaterialUI.svg?label=follow+Material-UI)](https://twitter.com/MaterialUI)
+# EmotionRecognition  [![GitHub release](https://img.shields.io/badge/Release-v1-green.svg?&colorA=024a70&?&colorB=0779b5)](https://github.com/Arpith-kumar/EmotionRecognition)   [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg?logo=paypal&style=flat-square)](https://www.paypal.me/arpith09)&nbsp; [![Follow on LinkedIn](https://img.shields.io/twitter/follow/MaterialUI.svg?label=follow+Material-UI)](https://www.linkedin.com/in/arpith-s/)
 
 
 
