@@ -1,6 +1,7 @@
 # EmotionRecognition  [![GitHub release](https://img.shields.io/badge/Release-v1-green.svg?&colorA=024a70&?&colorB=0779b5)]() 
 
-[![Support](https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png)](https://www.buymeacoffee.com/arpith)
+[![Support](https://image.flaticon.com/icons/svg/196/196566.svg)](https://www.buymeacoffee.com/arpith)
+
 
 Emotion recognition (Angry, Disgust, Fear, Happy, Sad, Surprise, Neutral) using CNN with Python 3.x
 
