@@ -1,4 +1,4 @@
-# EmotionRecognition  [![GitHub release](https://img.shields.io/badge/Release-v1-green.svg?&colorA=024a70&?&colorB=0779b5)](https://github.com/Arpith-kumar/EmotionRecognition)&nbsp; [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg?logo=paypal)](https://www.paypal.me/arpith09)&nbsp; [![Follow](https://img.shields.io/badge/Donate-LinkedIn-green.svg?logo=linkedin)](https://www.linkedin.com/in/arpith-s/)&nbsp; 
+# EmotionRecognition  [![GitHub release](https://img.shields.io/badge/Release-v1-green.svg?&colorA=024a70&?&colorB=0779b5)](https://github.com/Arpith-kumar/EmotionRecognition)&nbsp; [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg?logo=paypal)](https://www.paypal.me/arpith09)&nbsp; [![Follow](https://img.shields.io/badge/Follow-LinkedIn-red.svg?logo=linkedin)](https://www.linkedin.com/in/arpith-s/)&nbsp; 
 <!-- [![Support](https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png)](https://www.buymeacoffee.com/arpith) -->
 
 
